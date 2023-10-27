@@ -1,0 +1,44 @@
+main {
+    flex: 1 1 auto;
+}
+
+._container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+input {
+    margin-right: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form__footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.select-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__header {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.button-section {
+    display: flex;
+    justify-content: space-between;
+}

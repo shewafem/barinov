@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="_container">
+            <form class="form" action="#">
+                <fieldset class="form__header">
+                    <legend>Search Parameters</legend>
+                        <div class="select-section">
+                            <div>
+                                <label for="city-select">From</label>
+                                <select name="cities" id="city-select">
+                                <option value="">Choose an option</option>
+                                <option value="cal">CAL</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="city-select">To</label>
+                                <select name="cities" id="city-select">
+                                <option value="">Choose an option</option>
+                                <option value="cal">AUH</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="city-select">Cabin type</label>
+                                <select name="cities" id="city-select">
+                                <option value="">Choose an option</option>
+                                <option value="cal">Economy</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="button-section">
+                            <label><input class="" type="radio" name="direction" value="return">Return</label>
+                            <label><input class="" type="radio" name="direction" value="return">One way</label>
+                            <label>Outbound<input type="date"></label>
+                            <label>Return<input type="date"></label>
+                            <button type="submit">Apply</button>
+                        </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Outbound Flight Details</legend>
+                    <label><input type="checkbox">Display three before and after</label>
+                    <table border="1">
+                        <tr>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Flight Number(s)</th>
+                            <th>Cabin Price</th>
+                            <th>Number of Stops</th>
+                        </tr>
+                        <tr>
+                            <td>AUH</td>
+                            <td>CAL</td>
+                            <td>11/10/2016</td>
+                            <td>8:15</td>
+                            <td>[xxx]</td>
+                            <td>405$</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend>Outbound Flight Details</legend>
+                    <label><input type="checkbox">Display three before and after</label>
+                    <table border="1">
+                        <tr>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Flight Number(s)</th>
+                            <th>Cabin Price</th>
+                            <th>Number of Stops</th>
+                        </tr>
+                        <tr>
+                            <td>AUH</td>
+                            <td>CAL</td>
+                            <td>11/10/2016</td>
+                            <td>8:15</td>
+                            <td>[xxx]</td>
+                            <td>405$</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset class="form__footer">
+                    <legend>Confirm booking for</legend>
+                    <label><input type="number">Passengers</label>
+                    <button type="submit">Book flight</button>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

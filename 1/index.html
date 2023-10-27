@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Apply Schedule Changes</title>
+</head>
+<body>
+<div class="wrapper">
+    <main class="page">
+        <div class="_container">
+            <form class="form" id="importForm">
+                <label class="form__label" for="fileInput">Please select a text file with the changes</label>
+                <div class="form__wrapper">
+                    <input class="form__input" type="file" id="fileInput" name="file">
+                    <button class="form__button" id="importButton">Import</button>
+                </div>
+                <fieldset class="form__fieldset">
+                    <legend class="form__legend">Results</legend>
+                        <ul class="results">
+                            <li class="results__item">
+                                Successful Changes Applied
+                            </li>
+                            <li class="results__item">
+                                Duplicate Records Discarded
+                            </li>
+                            <li class="results__item">
+                                Records With Missing Fields Discarded
+                            </li>
+                        </ul>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+</div>
+</body>
+</html>

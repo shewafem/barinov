@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Billing confirmation</title>
+</head>
+<body>
+<div class="wrapper">
+    <main class="page">
+        <div class="_container">
+            <form class="payment-form" action="#">
+                <div class="payment-form__main">
+                    <p class="payment-form__text">Total amount: {xxx}</p>
+                    <label class="payment-form__label" for="card">Paid using:</label>
+                    <div id="payment-form__methods" class="payment-methods">
+                        <label><input class="payment-method" type="radio" id="card" name="payment-method" value="card">Credit Card</label>
+                        <label><input class="payment-method" type="radio" id="cash" name="payment-method" value="cash">Cash</label>
+                        <label><input class="payment-method" type="radio" id="voucher" name="payment-method" value="voucher">Voucher</label>
+                    </div>
+                </div>
+                <div class="billing-form__buttons">
+                    <button type="submit" name="submit" class="form__button form__button--issue">Issue Tickets</button>
+                    <button type="button" name="cancel" class="form__button form__button--cancel">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</div>
+</body>
+</html>
