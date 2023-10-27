@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Booking confirmation</title>
+</head>
+<body>
+    <main class="page">
+        <form class="form" method="#">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Outbound Flight Details</legend>
+                <p>From: Destination 1</p>
+                <p>To: Destination 2</p>
+                <p>Cabin type: Economy</p>
+                <p>Date: 2023-10-28</p>
+                <p>Flight Number: FLT123</p>
+            </fieldset>
+            
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Return Flight Details</legend>
+                <p class="form__text">From: Destination 2</p>
+                <p class="form__text">To: Destination 1</p>
+                <p class="form__text">Cabin type: Business</p>
+                <p class="form__text">Date: 2023-11-05</p>
+                <p class="form__text">Flight Number: FLT456</p>
+            </fieldset>
+            
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Passenger Details</legend>
+                <label class="form__label" for="firstname">First Name:</label>
+                <input class="form__input" type="text" id="firstname" name="firstname"><br><br>
+                <label class="form__label" for="lastname">Last Name:</label>
+                <input class="form__input" type="text" id="lastname" name="lastname"><br><br>
+                <label class="form__label" for="birthdate">Birthdate:</label>
+                <input class="form__input" type="date" id="birthdate" name="birthdate"><br><br>
+                <label class="form__label" for="passport">Passport Number:</label>
+                <input class="form__input" type="text" id="passport" name="passport"><br><br>
+                <label class="form__label" for="passport-country">Passport Country:</label>
+                <input class="form__input" type="text" id="passport-country" name="passport-country"><br><br>
+                <label class="form__label" for="phone">Phone:</label>
+                <input class="form__input" type="tel" id="phone" name="phone"><br><br>
+                <button class="form__button" type="submit" id="add-passenger">Add Passenger</button>
+            </fieldset>
+        </form>
+        <div class="form__footer passenger-list">
+            <h2 class="form__heading">Passenger List</h2>
+            <table class="form__table">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Birthdate</th>
+                        <th>Passport Number</th>
+                        <th>Passport Country</th>
+                        <th>Phone</th>
+                    </tr>
+                </thead>
+                <tbody id="form__body-table">
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>1990-05-15</td>
+                        <td>AB123456</td>
+                        <td>USA</td>
+                        <td>123-456-7890</td>
+                    </tr>
+                    <tr>
+                        <td>Jane</td>
+                        <td>Smith</td>
+                        <td>1985-12-20</td>
+                        <td>CD789012</td>
+                        <td>Canada</td>
+                        <td>987-654-3210</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="form__button-container">
+            <button class="form__button button-back">Back to Search for Flights</button>
+            <button class="form__button" id="confirm-booking">Confirm Booking</button>
+        </div>
+    </div>
+</body>
+</html>
